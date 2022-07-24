@@ -1,0 +1,11 @@
+#grid {
+    display: grid;
+    grid-template-columns: auto
+    auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+body {
+    color: blue;
+    border: 2px solid green;
+
+}
