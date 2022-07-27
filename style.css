@@ -1,7 +1,11 @@
 #grid {
     display: grid;
-    grid-template-columns: auto
-    auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+#btn {
+    margin: 10px;
+    padding: 20px;
+    background-color: cornflowerblue;
 }
 
 body {
