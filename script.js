@@ -5,16 +5,15 @@ const inpt = document.querySelector("#inpt");
 
 
 
-const askUser = () => {
+btn.addEventListener('click', () => {
     if (typeof parseInt(inpt.value) == 'number' && parseInt(inpt.value) < 100 && parseInt(inpt.value) > 0) {
-        for (let i = 0; i < parseInt(inpt.value)*parseInt(inpt.value); i++) {
+        let timeout;
+        for (let i = 0; i < parseInt(inpt.value)**2; i++) {
             const div = document.createElement('div');
             div.className = 'divs';
-            div.id = 'div2';
-            div.textContent = '';
+            container.style.gridTemplateColumns = `repeat(${parseInt(inpt.value)}, auto)`
+            container.style.gridTemplateRows = `repeat(${parseInt(inpt.value)}, auto)`
             container.append(div)
-            let timeout;
-            div.style.gridTemplateColumns = 'auto'*parseInt(inpt.value)
         
             const removeTransition = () => {    
                 div.classList.remove('clicked');
@@ -34,11 +33,7 @@ const askUser = () => {
     } else {
         alert('You need to input an integer');        
     }
-
-}
-
-
-btn.addEventListener('click', askUser)
+})
 
 
 
