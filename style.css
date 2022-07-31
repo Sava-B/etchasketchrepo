@@ -1,28 +1,32 @@
 #grid {
     display: grid;
-    width: 90px;
+    max-width: 960px;
+    max-height: 960px; 
 }
 
 #btn {
-    margin: 10px;
+    margin: 20px;
     padding: 20px;
     background-color: cornflowerblue;
 }
 
 body {
     color: blue;
+    max-width: 960px;
 
 }
 
 .divs {
-    border: 3px solid black; 
+    border: 1px solid black; 
     background: white;
-    padding: 50px;
+    padding: 45%; 
+    position: center;
+
 
 }
 
 .clicked {
-    display: flex;
+    /* display: flex; */
     background: blue;
     transition: all 0.6s ease;
 }
